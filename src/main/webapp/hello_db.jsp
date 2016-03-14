@@ -22,12 +22,6 @@ public void jspInit() {
 
 <body>
 <h1>Hello</h1>
-<%= System.getenv("PATH") %><br>
-<%= System.getenv("HELLO_PHP_MYSQL_SERVICE_HOST")  %><br>
-<%= System.getenv("MYSQL_USER")  %><br>
-<%= System.getenv("MYSQL_PASSWORD")  %><br>
-<%= System.getenv("MYSQL_DATABASE")  %><br>
-
 
 <%
 //        String host = "localhost";
@@ -35,6 +29,7 @@ public void jspInit() {
 //        String db_password = "password";
 //        String db_name = "mydb";
 
+        // DBÚ‘±—p‚ÌŠÂ‹«•Ï”Žæ“¾
         String host = System.getenv("HELLO_PHP_MYSQL_SERVICE_HOST");
         String db_user = System.getenv("MYSQL_USER");
         String db_password = System.getenv("MYSQL_PASSWORD");
